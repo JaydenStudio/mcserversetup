@@ -99,7 +99,7 @@ def install():
         else:
             print("error downloading")
             print("Please try again!")
-    c = input("Are you sure you want to accept this eula (T/F)?https://www.minecraft.net/zh-hans/eula")
+    c = input("Are you sure you want to accept this eula https://www.minecraft.net/zh-hans/eula (T/F)?")
     if c == "T" or c == "t":
         print("Accept")
         with open("./Minecraft/eula.txt", "w", encoding="utf-8") as f:
