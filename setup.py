@@ -121,6 +121,7 @@ def install_vanilla():#Function install_vanilla
         with open("./Minecraft/eula.txt", "w", encoding="utf-8") as f:#open eula file
             f.write("eula=True")#accept the eula
         os.system("cd Minecraft && java -jar server.jar")#start server
+        exit()#exit python
     elif c == "F" or c == "f":#if user is not accepted eula
         print("Error!Please accept eula!")#print ErrorMessage
         print("This is not a bug!")#print this is not a bug
@@ -234,6 +235,7 @@ def install_papermc():
         with open("./Minecraft/eula.txt", "w", encoding="utf-8") as f:
             f.write("eula=True")
         os.system("cd Minecraft && java -jar server.jar")
+        exit()#exit python
     elif c == "F" or c == "f":
         print("Error!Please accept eula!")
         print("This is not a bug!")
